@@ -62,13 +62,12 @@
 # 	Since the ATMEGA8U2 part is not directly supported by the current
 #	versions of either avrdude or dfu-programmer, we specify a dummy
 #	part; AT90USB82 which is close enough in memory size and organization
-MCU = atmega16u2
-MCU_AVRDUDE = atmega16u2
-MCU_DFU = atmega16u2
-
-#MCU = atmega8u2
-#MCU_AVRDUDE = at90usb82
-#MCU_DFU = at90usb82
+MCU = atmega8u2
+MCU_AVRDUDE = at90usb82
+MCU_DFU = at90usb82
+#MCU = atmega16u2
+#MCU_AVRDUDE = atmega16u2
+#MCU_DFU = atmega16u2
 
 # Specify the Arduino model using the assigned PID.  This is used by Descriptors.c
 #   to set PID and product descriptor string
