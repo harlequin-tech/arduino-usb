@@ -27,47 +27,56 @@ Sketch report formats
 Small joystick interface
 * 2 axis, signed 8 bit values -100 to 100
 * 2 buttons
-
+```
     struct {  
         int8_t x;  
         int8_t y;  
         uint8_t buttons;  
         uint8_t rfu; 	/* reserved for future use */  
     } joyReport;  
+```
 
 Big joystick interface
 * 8 axis, signed 16 bit values -32768 to 32767
 * 40 buttons
 
+```
     typedef struct joyReport_t {
         int16_t axis[8];
         uint8_t button[5]; // 8 buttons per byte
     } joyReport_t;
+```
 
 USB HID Keyboard 
 * See <a href="http://www.usb.org/developers/devclass_docs/Hut1_11.pdf">http://www.usb.org/developers/devclass_docs/Hut1_11.pdf</a> for key codes.
 
+```
     typedef {  
         uint8_t modifiers_keys;	// CTRL, Shift, ALT, and GUI modifier keys  
         uint8_t rfu;		// reserved  
         uint8_t key[6];		// HID active key usage codes. This represents up to 6 keys currently being pressed.  
     } keyboardReport_t;  
+```
 
 USB MIDI device
+```
     typedef union {  
         uint8_t command;  
         uint8_t channel;  
         uint8_t data2;  
         uint8_t data3;  
     } t_midiMsg;  
+```
 
 Mouse
+```
     struct {  
         uint8_t buttons;  
         int8_t x;  
         int8_t y;  
         int8_t wheel;	/* Not yet implemented */  
     } mouseReport;  
+```
 
 Building the firmware
 --------------------
