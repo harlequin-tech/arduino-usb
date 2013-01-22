@@ -119,8 +119,9 @@ Put the UNO into DFU mode.
     dfu-programmer at90usb82 flash --debug 1 Arduino-big-joystick.hex  
     dfu-programmer at90usb82 reset  
 
-Unplug the UNO's USB cable for a few seconds and plug it back in
-For the ATMEGA16U2 (UNO R3, MEGA2560 R3)
+Unplug the UNO's USB cable for a few seconds and plug it back in.  
+
+For the ATMEGA16U2 (UNO R3, MEGA2560 R3):
 Put the UNO into DFU mode.
 
     dfu-programmer atmega16u2 erase  
