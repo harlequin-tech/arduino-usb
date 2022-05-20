@@ -48,7 +48,7 @@ Big joystick interface
 ```
 
 USB HID Keyboard 
-* See <a href="http://www.usb.org/developers/devclass_docs/Hut1_11.pdf">http://www.usb.org/developers/devclass_docs/Hut1_11.pdf</a> for key codes.
+* See <a href="https://www.usb.org/sites/default/files/documents/hut1_12v2.pdf">https://www.usb.org/sites/default/files/documents/hut1_12v2.pdf</a> for key codes(Pages 53-59).
 
 ```
     typedef {  
